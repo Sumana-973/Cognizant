@@ -1,0 +1,478 @@
+/*=========================================
+    UNIVERSAL SELECTOR
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/*=========================================
+    BODY STYLES
+=========================================*/
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/*=========================================
+    HEADER STYLES
+=========================================*/
+
+#mainHeader{
+    background:linear-gradient(to right,#2193b0,#6dd5ed);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.highlight{
+    font-size:36px;
+    font-weight:bold;
+}
+
+
+/*=========================================
+    NAVIGATION BAR
+=========================================*/
+
+nav{
+    background:#333;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin:5px;
+    display:inline-block;
+}
+
+
+/* Link States */
+
+nav a:link{
+    color:white;
+}
+
+nav a:visited{
+    color:lightgreen;
+}
+
+nav a:hover{
+    color:yellow;
+    background:#555;
+    border-radius:5px;
+}
+
+nav a:active{
+    color:red;
+}
+
+
+/*=========================================
+    SECTION HEADINGS
+=========================================*/
+
+h2{
+    background:linear-gradient(to right,#56ab2f,#a8e063);
+    color:white;
+    padding:10px;
+    margin-top:20px;
+}
+
+
+/* Group Selector */
+
+h3,p{
+    letter-spacing:1px;
+}
+
+
+/*=========================================
+    MAIN SECTION
+=========================================*/
+
+section{
+    padding:20px;
+}
+
+
+/*=========================================
+    EVENT CARDS
+=========================================*/
+
+.eventCard{
+
+    background:rgba(255,255,255,0.9);
+
+    border:2px solid gray;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin:20px;
+
+    box-shadow:3px 3px 8px lightgray;
+}
+
+
+/*=========================================
+    BUTTON STYLES
+=========================================*/
+
+/* Style for main CTA button */
+
+.cta-button{
+
+    background:#007BFF;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    cursor:pointer;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+}
+
+.cta-button:hover{
+
+    background:#0056b3;
+
+}
+
+
+/*=========================================
+    FORM STYLES
+=========================================*/
+
+.registrationForm{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+.registrationForm input,
+
+.registrationForm textarea,
+
+.registrationForm select{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:5px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* Outline Example */
+
+.registrationForm input:focus,
+
+.registrationForm textarea:focus,
+
+.registrationForm select:focus{
+
+    outline:3px solid orange;
+
+}
+
+
+/*=========================================
+    LIST STYLES
+=========================================*/
+
+.services{
+
+    list-style-type:square;
+
+    list-style-position:inside;
+
+}
+
+.services li{
+
+    padding:10px;
+
+    margin:5px;
+
+}
+
+
+/*=========================================
+    TABLE STYLES
+=========================================*/
+
+table{
+
+    width:90%;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    text-align:center;
+
+}
+
+table caption{
+
+    font-size:24px;
+
+    margin:15px;
+
+    font-weight:bold;
+
+}
+
+table,th,td{
+
+    border:1px solid gray;
+
+}
+
+th,td{
+
+    padding:12px;
+
+}
+
+tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+
+/*=========================================
+    IMAGE STYLES
+=========================================*/
+
+.eventImage{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+}
+
+.eventImage:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/*=========================================
+    NEWS SECTION
+=========================================*/
+
+.newsArticle{
+
+    column-count:2;
+
+    column-gap:30px;
+
+    column-rule:1px solid gray;
+
+    text-align:justify;
+
+}
+
+
+/*=========================================
+    TYPOGRAPHY
+=========================================*/
+
+p{
+
+    font-size:16px;
+
+    font-style:normal;
+
+    font-weight:400;
+
+    text-align:justify;
+
+    line-height:1.8;
+
+}
+
+h3{
+
+    text-transform:uppercase;
+
+}
+
+
+/*=========================================
+    HIDDEN vs DISPLAY
+=========================================*/
+
+.hiddenBox{
+
+    visibility:hidden;
+
+    background:yellow;
+
+    padding:20px;
+
+    margin:20px;
+
+}
+
+.noneBox{
+
+    display:none;
+
+    background:red;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+
+/*=========================================
+    VIDEO
+=========================================*/
+
+video{
+
+    display:block;
+
+    margin:auto;
+
+    border:3px solid gray;
+
+    border-radius:10px;
+
+}
+
+
+/*=========================================
+    FOOTER
+=========================================*/
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    margin-top:30px;
+
+}
+
+
+/*=========================================
+    RESPONSIVE DESIGN
+=========================================*/
+
+@media screen and (max-width:768px){
+
+    nav{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    nav a{
+
+        display:block;
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    body{
+
+        font-size:14px;
+
+    }
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+    .eventImage{
+
+        width:80%;
+
+        height:auto;
+
+    }
+
+    table{
+
+        width:100%;
+
+    }
+
+    .eventCard{
+
+        margin:10px;
+
+    }
+
+    .newsArticle{
+
+        column-count:1;
+
+    }
+
+    video{
+
+        width:90%;
+
+        height:auto;
+
+    }
+
+}
